@@ -1,0 +1,9 @@
+Responses
+
+1. Why does teamMembers return all and only the volunteers assigned to the requested team?
+
+The method checks every volunteer from 0 to volunteerCount minus 1 exactly once and adds a volunteer only if teamFor gives the requested team. Nobody gets in without passing that check, so only team members are returned. Every existing volunteer is checked, so none are missed.
+
+2. How does testing examples differ from establishing correctness for every valid input?
+
+Testing tries a few chosen inputs and shows the method works for those only. It can find mistakes but cannot prove there are none. Establishing correctness is an argument that covers every valid input. It shows that everything returned qualifies, nothing qualifying is left out, and the method always finishes.
